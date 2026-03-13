@@ -2,6 +2,10 @@ name: Build GHCR image
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+      - copilot/feat-channel-add-support-newsletter
 
 jobs:
   build_deploy:
